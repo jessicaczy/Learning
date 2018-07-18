@@ -14,9 +14,10 @@ git remote -v
 #initial
 git init
 
-#check anything changed
+#check anything changed--will be untracked
 git status
 
+#use add * to track change
 git add *
 
 #commit to the update
