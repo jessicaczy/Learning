@@ -1,0 +1,45 @@
+Cd ~/Documents/GitHub/Learning
+##check config
+git config -l
+## or
+## git config --global user.name 'jessicaczy'
+## git config --global user.email 'Jessica@firststreet.org'
+
+#connect to repository
+git remote set-url ''
+git remote add origin ''
+git remote rm origin
+git remote -v
+
+#initial
+git init
+
+#check anything changed
+git status
+
+git add *
+
+#commit to the update
+git commit -m 'first_commit'
+
+#push
+git push -f origin master
+
+
+
+#######################SSH-KEY#######################
+Online - profile- setting- generating ssh-key
+1. Generating
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+2. When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.
+3. At the prompt, type a secure passphrase. For more information, see "Working with SSH key passphrases".
+
+
+Adding your SSH key to the ssh-agent
+1.eval "$(ssh-agent -s)"
+2. ssh-add -K ~/.ssh/id_rsa
+
+Adding a new SSH key to your GitHub account
+1. pbcopy < ~/.ssh/id_rsa.pub
+# Copies the contents of the id_rsa.pub file to your clipboard
+2. Profile -> setting -> generating ssh-key -> Paste your key into the "Key" field. -> enter password if required
