@@ -23,7 +23,7 @@ git add *
 #commit to the update
 git commit -m 'first_commit'
 
-#push
+#push, -f means force in case different version script in the repository
 git push -f origin master
 
 
